@@ -15,5 +15,5 @@ output "cluster_certificate_authority_data" {
 
 output "region" {
   description = "The AWS region where the cluster is deployed"
-  value       = "us-east-1" # Or pull this from your provider if dynamic
+  value       = "ap-south-1" # Or pull this from your provider if dynamic
 }

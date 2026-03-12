@@ -12,7 +12,7 @@ generate "provider" {
   if_exists = "overwrite_terragrunt"
   contents  = <<EOF
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 
 }
 EOF
@@ -24,7 +24,7 @@ remote_state {
   config = {
     bucket         = "my-eks-state-${local.account_id}"
     key            = "${path_relative_to_include()}/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "ap-south-1"
     encrypt        = true
     dynamodb_table = "terraform-locks"
   }
